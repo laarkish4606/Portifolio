@@ -67,7 +67,7 @@ document.querySelector("form").addEventListener("submit", async (e) => {
   const email = document.querySelector("input[type='email']").value;
   const message = document.querySelector("textarea").value;
 
-  const res = await fetch("http://localhost:5000/contact", {
+  const res = await fetch("https://portifolio-backend-8xvs.onrender.com/contact", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ name, email, message }),
